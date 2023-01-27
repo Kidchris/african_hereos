@@ -10,7 +10,7 @@ window.onscroll = function () {
   }
 }
 
-var texts = [" first", " second", " third"];
+var texts = [" first", " second .", " third."];
 var i = 0;
 var j = 0;
 var k = 0;
@@ -22,26 +22,58 @@ function typeWriter() {
     j++;
     setTimeout(typeWriter, speed);
   } else {
-    setTimeout(function () {
-      if (k < texts[i].length) {
-        document.getElementById("demo").innerHTML = texts[i].slice(0, -(k + 1));
-        k++;
-        setTimeout(typeWriter, speed);
-      } else {
+    setTimeout(function(){
+        document.getElementById("demo").innerHTML = "";
         j = 0;
-        k = 0;
         i++;
         if (i < texts.length) {
-          setTimeout(typeWriter, speed);
+            setTimeout(typeWriter, 0);
         } else {
-          i = 0;
-          setTimeout(typeWriter, speed);
+            i = 0;
+            setTimeout(typeWriter, 2000);
         }
-      }
-    }, 500);
+    }, 5000);
   }
 }
 
+
+
+
+// // array of text
+// var texts = ["text 1","text 2", "text 3"];
+
+// // index of the current text
+// var index = 0;
+
+// // set interval
+// setInterval(function(){
+//     // get the text element
+//     var textEl = document.getElementById("text");
+//     // remove any previous animation class
+//     textEl.classList.remove("animated-text");
+//     // set the innerHTML of the text element to the current text
+//     textEl.innerHTML = texts[index];
+
+//     // Use setTimeout to wait for the text to be rendered before adding the class
+//     setTimeout(function(){
+//         textEl.classList.add("animated-text");
+//     }, 0);
+
+//     // increment the index for the next text
+//     index++;
+
+//     // if we reach the end of the texts, start from the beginning
+//     if(index >= texts.length){
+//         index = 0;
+//     }
+// }, 10000);
+
+// var button = document.getElementById("learn-more-button");
+// var overlay = document.getElementById("overlay");
+
+// button.addEventListener("click", function(){
+//     overlay.classList.toggle("visible");
+// });
 
 // Function to show the overlay
 function showOverlay() {

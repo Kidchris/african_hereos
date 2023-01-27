@@ -95,9 +95,4 @@ function animateWords() {
   }
 }
 
-// Add event listeners to the "Learn More" button and "Close" button
-document.getElementById("learn-more-button").addEventListener("click", showOverlay);
-document.getElementById("close-button").addEventListener("click", hideOverlay);
-
-// Add event listener to the window to handle the animation when the page is loaded
 window.addEventListener("load", animateWords);

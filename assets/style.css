@@ -160,7 +160,7 @@ h2.font-bold.centered {
   margin-left: 15%;
 }
 
-#about .about-text,
+#about .about-text, .text,
 #services .services-text {
   width: 80%;
   margin-left: 10%;
@@ -293,10 +293,11 @@ footer {
 
 }
 
-h2 {
+h2.titre {
   font-family: Raft, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
   font-weight: 700;
-  letter-spacing: 1;
+  letter-spacing: 1.5;
+  font-size: 3em !important;
 }
 
 .hereos-profiles {
@@ -316,7 +317,7 @@ h2 {
   width: 100%;
   height: 300px;
   border-radius: 20px;
-  transition:  .3s ease-in-out ;
+  transition: .3s ease-in-out;
 }
 
 .hereos-profiles div img:hover {
@@ -324,6 +325,33 @@ h2 {
   box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.692), -3px -2px 1px rgba(0, 0, 0, 0.692);
 }
 
+/* 
+Why choose us section 
+*/
+section.why-us, section.why-us-odd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+  height: 80vh;
+  /* margin-bottom: 25rem; */
+}
+
+section.why-us .half-width, section.why-us-odd .half-width {
+  width: 50%;
+}
+section.why-us .half-width:first-child{
+  padding-left: 5%;
+}
+.half-width h2.titre{
+  padding-left: 10%;
+}
+.half-width img {
+  border: 2px solid rgb(190, 190, 190);
+  object-fit: cover;
+  width: 99%;
+  height: 70vh;
+}
 @media (max-width:700px) {
   h2.font-bold.centered {
     margin-left: 0;

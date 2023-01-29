@@ -452,4 +452,7 @@ section.why-us .half-width:first-child {
     padding: 0;
     margin: 0;
   }
+#background-image {
+height: 100%;
+}
 }

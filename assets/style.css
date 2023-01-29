@@ -160,7 +160,8 @@ h2.font-bold.centered {
   margin-left: 15%;
 }
 
-#about .about-text, .text,
+#about .about-text,
+.text,
 #services .services-text {
   width: 80%;
   margin-left: 10%;
@@ -208,7 +209,7 @@ h2.font-bold.centered {
 
 /* Contact Section Styles */
 #contact {
-  margin: 10vh 0;
+  margin: 10% 0;
   background-color: #dadada;
   padding: 20px;
   text-align: center;
@@ -221,13 +222,14 @@ h2.font-bold.centered {
   flex-direction: column;
   justify-content: space-evenly;
 }
-a.reach-us{
+
+a.reach-us {
   text-decoration: none;
-padding: 9px;
-border: 1px solid grey;
-border-radius: 5px;
-color:#000;
-background-color: #fff;
+  padding: 9px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
 }
 
 #contact h2 {
@@ -322,30 +324,42 @@ h2.titre {
 /* 
 Why choose us section 
 */
-section.why-us, section.why-us-odd {
+section.why-us,
+section.why-us-odd {
   width: 100%;
   display: flex;
   align-items: center;
   margin-top: 20vh;
   height: 80vh;
-  /* margin-bottom: 25rem; */
 }
 
-section.why-us .half-width, section.why-us-odd .half-width {
+section.why-us .half-width,
+section.why-us-odd .half-width {
   width: 50%;
 }
-section.why-us .half-width:first-child{
+
+section.why-us .half-width:first-child {
   padding-left: 5%;
 }
-.half-width h2.titre{
+
+.half-width h2.titre {
   padding-left: 10%;
 }
+
 .half-width img {
   border: 2px solid rgb(190, 190, 190);
   object-fit: cover;
   width: 99%;
   height: 70vh;
+
 }
+
+@media (min-width:700px) and (max-width:1024px) {
+  * {
+    display: none;
+  }
+}
+
 @media (max-width:700px) {
   h2.font-bold.centered {
     margin-left: 0;
@@ -365,5 +379,77 @@ section.why-us .half-width:first-child{
 
   div.buttons div {
     width: 100%;
+  }
+
+  #about,
+  #services {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #about h2.titre,
+  #services h2.titre {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .hereos-profiles div {
+    width: 48%;
+    margin: 1rem 1%;
+  }
+
+  .hereos-profiles {
+    flex-wrap: wrap;
+  }
+
+  section.why-us {
+    flex-direction: column;
+    height: auto;
+  }
+
+  section.why-us-odd {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  section.why-us .half-width,
+  section.why-us-odd .half-width {
+    width: 90%;
+  }
+
+  section.why-us .half-width:first-child {
+    padding-left: 0;
+  }
+
+  .half-width h2.titre {
+    padding-left: 1%;
+  }
+
+  .half-width p.text {
+    margin: 0 0 2rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #contact {
+    margin: 5% 1%;
+    padding: 20px;
+    width: 90%;
+    border: 0;
+  }
+
+  #contact h2 {
+    font-family: monospace;
+  }
+  a.nav-link{
+    display: none;
+  }
+  header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
 }

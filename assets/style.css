@@ -355,12 +355,12 @@ section.why-us .half-width:first-child {
 }
 
 @media (min-width:700px) and (max-width:1024px) {
-  * {
-    display: none;
+  #contact {
+    margin: 5% 1% 0 1% !important;
   }
 }
 
-@media (max-width:700px) {
+@media (max-width:1024px) {
   h2.font-bold.centered {
     margin-left: 0;
   }

@@ -329,7 +329,7 @@ section.why-us-odd {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 2rem;
   height: 80vh;
 }
 
@@ -348,9 +348,9 @@ section.why-us .half-width:first-child {
 
 .half-width img {
   border: 2px solid rgb(190, 190, 190);
-  object-fit: cover;
-  width: 99%;
-  height: 70vh;
+  object-fit: fill;
+  width: 100%;
+  height: 50vh;
 
 }
 
@@ -434,9 +434,10 @@ section.why-us .half-width:first-child {
 
   #contact {
     margin: 5% 1%;
-    padding: 20px;
+    padding: 15px;
     width: 90%;
     border: 0;
+    height: 50vh;
   }
 
   #contact h2 {
@@ -455,4 +456,30 @@ section.why-us .half-width:first-child {
 #background-image {
 height: 100%;
 }
+
+.hereos-profiles div img {
+  width: 100%;
+  height: 200px;
+}
+
+#contact p.text{
+  width: 100%;
+  text-align: justify;
+  margin-left: 0;
+
+}
+.about-img img{
+  width: 100%;
+}
+.services-text, .about-text, .text{
+ width: 100%;
+ margin: 0;
+}
+#about h2, #services h2{
+  line-height: 1.3;
+}
+
+}
+h2.titre{
+  text-align: center;
 }
